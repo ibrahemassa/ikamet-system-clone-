@@ -26,7 +26,7 @@
     <label for="gender">Gender</label>
     <select name="gender" id="gender">
       <option value="male">Male</option>
-      <option value="female">female</option>
+      <option value="female">Female</option>
     </select>
 
     <label for="idno">Nationality ID Number</label>
@@ -35,7 +35,9 @@
     <label for="nationality">Nationality</label>
     <select name="nationality" id="nationality">
       <option value="Syrian">Syrian</option>
-      <option value="Turkish">Turkish</option>
+      <option value="Palestinian">Palestinian</option>
+      <option value="Jordanian">Jordanian</option>
+      <option value="Saudi">Saudi</option>
       <option value="Other">Other</option>
     </select>
 
