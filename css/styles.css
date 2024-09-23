@@ -1,0 +1,135 @@
+/* #captcha{
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 60px;;
+    padding: 20px;
+    font-weight: 400;
+    padding-bottom: 0px;
+    height: 40px;
+    user-select: none;
+    text-decoration:line-through;
+    font-style: italic;
+    font-size: x-large;
+    border: red 2px solid;
+    margin-left: 10px;
+} */
+
+/* #captcha {
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    border: red 2px solid;
+    user-select: none;
+    color: #333;
+    background-color: #f9f9f9;
+    text-decoration:line-through;
+    font-style: italic;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type="button"], input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    grid-column: span 1; /* Buttons take full width on the form */
+}
+input[type="button"]{
+    background-color: #ff0000;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="button"]:hover{
+    background-color: #c00101;
+}
+
+/* Captcha and refresh button styling */
+#captcha {
+    grid-column: span 1; /* Make captcha span across both columns */
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    border: red 2px solid;
+    user-select: none;
+    color: #333;
+    background-color: #f9f9f9;
+    text-decoration:line-through;
+    font-style: italic;
+}
+
+#refresh-btn {
+    grid-column: span 1; /* Make refresh button span both columns */
+    width: 70%;
+    padding: 10px;
+    /* margin-top: 4px; */
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;  /* Switch to single-column layout on smaller screens */
+    }
+
+    #captcha, #refresh-btn {
+        grid-column: span 1; /* Make captcha and button span full width in single column */
+    }
+}
+
